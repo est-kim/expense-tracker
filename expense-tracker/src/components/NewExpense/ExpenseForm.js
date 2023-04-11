@@ -26,7 +26,7 @@ const ExpenseForm = (props) => {
       amount: amount,
       date: new Date(date),
     };
-    props.onSaveExpenseData(expenseData);
+    props.onSaveExpenseData(expenseData); //lifting the state up
     setTitle("");
     setAmount("");
     setDate("");
